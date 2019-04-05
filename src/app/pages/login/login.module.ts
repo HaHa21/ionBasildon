@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { LoginPage } from './login.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { LoginPage } from './login.page';
         path: '',
         component: LoginPage
       }
-    ])
+    ]),
+    SharedModule
   ],
   declarations: [LoginPage]
 })

@@ -8,13 +8,18 @@ import { Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() options? : HeaderOptions;
-  
+  showMenu : boolean = false;
   constructor() { }
 
   ngOnInit() {}
 
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 }
 
 export interface HeaderOptions{
-
+   title? : string;
+   color?: 'transparent' | 'solid';
+   showMenu? : boolean;
 }
