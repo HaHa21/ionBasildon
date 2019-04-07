@@ -1,27 +1,25 @@
-<ion-header>
+<ion-header class="row-background-color">
   <ion-grid>
     <ion-row>
-      <ion-col size="3" align-self-center></ion-col>
-      <ion-col padding size="6" align-self-center text-center>
+  
+      <ion-col size="12" align-self-center text-center>
         <ion-text *ngIf="options?.title; else elseLogo">
           {{ options.title }}
         </ion-text>
         <ng-template #elseLogo>
-          <ng-container>
-             <img class="img-height" src="../../../../assets/img/Background.png">
-            
-               <ion-col size="5" class="color-text">Basildon</ion-col>
-               <ion-col size="5">Council</ion-col>
-           
-          </ng-container>
+          <div class="wrapper">
+          <div class="img-height"></div>
+          </div>
+          <ion-col size="5" class="color-text size-text">Basildon</ion-col>
+          <ion-col size="5" class="size-text">Council</ion-col>
+          <ion-col size="12"><div class="size-text" >Basildon Bellericay Wickford</div></ion-col>
         </ng-template>
       </ion-col>
-      <ion-col size="3">
-        
-          <ion-col size="6"> EN </ion-col>
-          <ion-col size="6"> DE </ion-col>
-        
-      </ion-col>
+      <!-- <ng-template #elseLogo>
+        <ng-container>
+        <ion-row>Basildon Bellericay Wickford</ion-row>
+        </ng-container>
+      </ng-template> -->
     </ion-row>
   </ion-grid>
 </ion-header>

@@ -1,7 +1,23 @@
 <app-header></app-header>
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content class="content-color-background">
+  <form [formGroup]="loginForm">
+    <div padding class="display">
+      <div padding ion-margin-vertical class="background-input-username">
+        <ion-input
+          type="text"
+          placeholder="Username"
+          formControlName="userName"
+        ></ion-input>
+      </div>
+      <div padding ion-margin-vertical class="background-input-password">
+        <ion-input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        ></ion-input>
+      </div>
+    </div>
+    <ion-button type="submit" expand="block" color="primary">Login</ion-button>
+    <ion-button type="submit" expand="block" color="primary">New User</ion-button>
+  </form>
 </ion-content>
