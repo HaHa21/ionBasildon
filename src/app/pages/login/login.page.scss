@@ -1,29 +1,66 @@
-
-.background-color{
-    background-color: #808080;
+.background-color {
+  background-color: #808080;
 }
 
-.content-color-background{
-    --ion-background-color: #ACD1DA;
+.content-color-background {
+  --ion-background-color: #acd1da;
 }
 
-.background-input-username{
-    border-radius: 40px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: white;
+ion-grid {
+  width: 90%;
 }
 
-.display{
-    margin-left: 60px;
-    margin-right: 60px;
-    background-color: #808080;
+ion-input {
+  --placeholder-color: #707070;
+  --placeholder-opacity: 1;
+  font-size: 30px;
+}
+
+ion-content {
+  .display {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: black;
     margin-top: 20px;
-}
+    opacity: 0.5;
+    display: inline-block;
+  }
 
-.background-input-password{
+  .background-input-password {
+    display: inline-flex;
     border-radius: 40px;
     margin-top: 16px;
+    height: 55px;
     margin-bottom: 16px;
     background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-input-username {
+    border-radius: 40px;
+    margin-top: 16px;
+    height: 55px;
+    margin-bottom: 16px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    margin-top: 50px;
+  }
+}
+
+.color-btn {
+  background-color: #663bc9;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  ion-content {
+    form {
+      margin-top: 10px;
+    }
+  }
 }

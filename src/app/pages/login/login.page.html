@@ -1,7 +1,7 @@
 <app-header></app-header>
 <ion-content class="content-color-background">
   <form [formGroup]="loginForm">
-    <div padding class="display">
+    <div padding class="display" align-self-center>
       <div padding ion-margin-vertical class="background-input-username">
         <ion-input
           type="text"
@@ -17,7 +17,22 @@
         ></ion-input>
       </div>
     </div>
-    <ion-button type="submit" expand="block" color="primary">Login</ion-button>
-    <ion-button type="submit" expand="block" color="primary">New User</ion-button>
+    <ion-grid>
+      <ion-button type="submit" expand="block" class="color-btn"
+        >Login</ion-button
+      >
+      <ion-button type="submit" expand="block" class="color-btn"
+        >New User</ion-button
+      >
+
+      <ion-row class="ion-margin-vertical"
+        ><div text-center class="w-100"><a href="" text-center>T&Cs</a></div>
+      </ion-row>
+      <ion-row class="ion-margin-vertical"
+        ><div text-center class="w-100">
+          <a href="">Forgot Password??</a>
+        </div></ion-row
+      >
+    </ion-grid>
   </form>
 </ion-content>
