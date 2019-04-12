@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Component } from "@angular/core";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { LangService } from "../../shared/services/lang.service";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: 'login.page.html',
-  styleUrls: ['login.page.scss'],
+  selector: "app-login",
+  templateUrl: "login.page.html",
+  styleUrls: ["login.page.scss"]
 })
 export class LoginPage {
-  private loginForm : FormGroup;
+  private loginForm: FormGroup;
 
-  constructor( private formBuilder: FormBuilder ) {
+  constructor(public lang: LangService, private formBuilder: FormBuilder) {
     this.loginForm = this.formBuilder.group({
-      userName: ['', Validators.required],
-      password: ['', Validators.required]
+      userName: ["", Validators.required],
+      password: ["", Validators.required]
     });
   }
-  
 }
