@@ -15,11 +15,19 @@ export class LoginPage {
   constructor(
     public lang: LangService,
     private formBuilder: FormBuilder,
-    public router: Router
+    public navController: NavController
   ) {
     this.loginForm = this.formBuilder.group({
       userName: ["", Validators.required],
       passWord: ["", Validators.required]
     });
+  }
+
+  goToForgotPassword() {
+    this.navController.navigateForward("/forgot-password");
+  }
+
+  goToRegister() {
+    this.navController.navigateForward(" ");
   }
 }

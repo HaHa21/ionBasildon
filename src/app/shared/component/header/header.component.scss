@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
@@ -23,6 +23,10 @@
 
 .size-text {
   font-size: 14pt;
+}
+
+.font-size-title {
+  font-size: 20px;
 }
 
 ion-icon {
@@ -43,8 +47,20 @@ ion-icon {
 @media (min-width: 375px) and (max-width: 500px) {
   .img-height {
     height: 100px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 110px;
+    margin-right: 110px;
+    background-image: url("../../../../assets/img/logo_transparent.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img-height {
+    height: 130px;
+    width: 175px;
+    margin-left: 270px;
+    margin-right: 270px;
     background-image: url("../../../../assets/img/logo_transparent.png");
     background-size: cover;
     background-repeat: no-repeat;

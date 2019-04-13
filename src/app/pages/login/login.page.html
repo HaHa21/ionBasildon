@@ -1,27 +1,35 @@
 <app-header></app-header>
 <ion-content class="content-color-background">
   <form [formGroup]="loginForm">
-    <div padding class="display" align-self-center>
-      <div padding ion-margin-vertical class="background-input-username">
-        <ion-input
-          type="text"
-          placeholder="Username"
-          formControlName="userName"
-        ></ion-input>
-      </div>
-      <div padding ion-margin-vertical class="background-input-password">
-        <ion-input
-          type="password"
-          placeholder="Password"
-          formControlName="passWord"
-        ></ion-input>
-      </div>
-    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col padding class="display" align-self-center>
+          <div padding ion-margin-vertical class="background-input">
+            <ion-input
+              type="text"
+              placeholder="Username"
+              formControlName="userName"
+            ></ion-input>
+          </div>
+          <div padding ion-margin-vertical class="background-input">
+            <ion-input
+              type="password"
+              placeholder="Password"
+              formControlName="passWord"
+            ></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
     <ion-grid>
       <ion-button type="submit" expand="block" color="black-blue">{{
         lang.i18n.login.Login
       }}</ion-button>
-      <ion-button type="submit" expand="block" color="black-blue"
+      <ion-button
+        type="submit"
+        expand="block"
+        color="black-blue"
+        (click)="goToRegister()"
         >New User</ion-button
       >
 
@@ -32,7 +40,7 @@
       </ion-row>
       <ion-row class="ion-margin-vertical"
         ><div text-center class="w-100">
-          <a routerLink="/forgot-password" routerDirection="forward"
+          <a (click)="goToForgotPassword()" routerDirection="forward"
             >Forgot Password??</a
           >
         </div></ion-row
