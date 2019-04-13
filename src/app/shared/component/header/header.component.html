@@ -5,12 +5,20 @@
         <ng-container
           align-self-center
           class="ion-margin-vertical"
-          *ngIf="normalHeader; else elseLogo"
+          *ngIf="options?.title; else elseLogo"
         >
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="2">
+                <ion-icon name="arrow-round-back"></ion-icon>
+              </ion-col>
+              <ion-col size="6" offset="1">
+                {{ options.title }}
+              </ion-col>
+              <ion-col size="2"></ion-col> </ion-row
+          ></ion-grid>
         </ng-container>
-        <ng-template #normalHeader>
-          {{ options.title }}
-        </ng-template>
+
         <ng-template #elseLogo>
           <div class="wrapper">
             <div class="img-height"></div>
