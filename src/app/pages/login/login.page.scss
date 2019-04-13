@@ -13,7 +13,7 @@ ion-grid {
 ion-input {
   --placeholder-color: #707070;
   --placeholder-opacity: 1;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 ion-content {
@@ -21,7 +21,7 @@ ion-content {
     margin-left: 25px;
     margin-right: 25px;
     background-color: black;
-    margin-top: 20px;
+    margin-top: 15px;
     opacity: 0.5;
     display: inline-block;
   }
@@ -30,7 +30,7 @@ ion-content {
     display: inline-flex;
     border-radius: 40px;
     margin-top: 16px;
-    height: 55px;
+    height: 40px;
     margin-bottom: 16px;
     background-color: white;
     justify-content: center;
@@ -40,7 +40,7 @@ ion-content {
   .background-input-username {
     border-radius: 40px;
     margin-top: 16px;
-    height: 55px;
+    height: 40px;
     margin-bottom: 16px;
     background-color: white;
     display: inline-flex;

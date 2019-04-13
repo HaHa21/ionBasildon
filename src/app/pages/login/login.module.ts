@@ -18,14 +18,10 @@ import { ForgotPasswordPage } from "../forgot-password/forgot-password.page";
       {
         path: "",
         component: LoginPage
-      },
-      {
-        path: "forgotpassword",
-        component: ForgotPasswordPage
       }
     ]),
     SharedModule
   ],
-  declarations: [LoginPage, ForgotPasswordPage]
+  declarations: [LoginPage]
 })
 export class LoginPageModule {}
