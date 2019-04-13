@@ -13,7 +13,7 @@ export class LoginPage {
   constructor(public lang: LangService, private formBuilder: FormBuilder) {
     this.loginForm = this.formBuilder.group({
       userName: ["", Validators.required],
-      password: ["", Validators.required]
+      passWord: ["", Validators.required]
     });
   }
 }
