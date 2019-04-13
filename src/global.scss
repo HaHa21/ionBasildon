@@ -20,6 +20,12 @@ body {
   .w-100 {
     width: 100%;
   }
+  ion-input {
+    margin-left: 15px;
+    --ion-placeholder-color: #707070;
+    --ion-placeholder-opacity: 1;
+    --ion-font-size: 20px;
+  }
 }
 
 .ion-color-black-blue {
