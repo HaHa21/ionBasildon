@@ -28,6 +28,6 @@ export class LoginPage {
   }
 
   goToRegister() {
-    this.navController.navigateForward(" ");
+    this.navController.navigateForward("/registration");
   }
 }

@@ -11,7 +11,8 @@ const routes: Routes = [
     path: "forgot-password",
     loadChildren:
       "./pages/forgot-password/forgot-password.module#ForgotPasswordPageModule"
-  }
+  },  { path: 'registration', loadChildren: './pages/registration/registration.module#RegistrationPageModule' }
+
 ];
 
 @NgModule({

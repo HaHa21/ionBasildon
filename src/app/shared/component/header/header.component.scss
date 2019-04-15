@@ -1,8 +1,8 @@
 .img-height {
   height: 130px;
   width: 155px;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("../../../../assets/img/logo_transparent.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,30 +25,26 @@
   font-size: 14pt;
 }
 
-.font-size-title {
-  font-size: 20px;
-}
-
 ion-icon {
   font-size: 32px;
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 360px) {
   .img-height {
     height: 100px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../../../../assets/img/logo_transparent.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 375px) and (max-width: 500px) {
+@media (min-width: 361px) and (max-width: 500px) {
   .img-height {
     height: 100px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../../../../assets/img/logo_transparent.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,8 +55,8 @@ ion-icon {
   .img-height {
     height: 130px;
     width: 175px;
-    margin-left: 270px;
-    margin-right: 270px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../../../../assets/img/logo_transparent.png");
     background-size: cover;
     background-repeat: no-repeat;

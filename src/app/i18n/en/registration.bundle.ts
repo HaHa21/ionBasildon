@@ -1,3 +1,4 @@
 export default {
-  newUser: "New User"
+  newUser: "New User",
+  DOB: "Date Of Birth"
 };
