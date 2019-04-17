@@ -18,7 +18,8 @@ export class RegistrationPage implements OnInit {
       lastName: ["", Validators.required],
       address: ["", Validators.required],
       email: ["", Validators.required],
-      postCode: ["", Validators.required]
+      postCode: ["", Validators.required],
+      date: ["", Validators.required]
     });
   }
 

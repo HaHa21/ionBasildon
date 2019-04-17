@@ -1,5 +1,7 @@
 {
   "name": "ionbasildon",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

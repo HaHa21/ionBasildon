@@ -19,6 +19,10 @@ ion-content {
     align-items: center;
   }
 
+  .border-DOB {
+    border-radius: 50%;
+  }
+
   .background-input-address {
     border-radius: 40px;
     height: 70px;
@@ -29,4 +33,29 @@ ion-content {
     justify-content: center;
     align-items: center;
   }
+}
+
+.font-size {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.div-padding-checkbox {
+  padding: 5px;
+}
+
+.checkbox-size {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.gender-label {
+  text-indent: 5px;
+  color: white;
+}
+
+ion-item {
+  --border-radius: 20px;
+  --background: white;
 }

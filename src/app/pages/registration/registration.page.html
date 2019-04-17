@@ -57,11 +57,40 @@
             ></ion-input>
           </div>
           <ion-row>
-            <ion-label>{{ lang.i18n.registration.DOB }}</ion-label>
-            <ion-datetime
-              display-format="DD/MM/YYYY"
-              placeholder="Select Date"
-            ></ion-datetime>
+            <ion-col size="12">
+              <ion-item>
+                <ion-label position="floating">{{
+                  lang.i18n.registration.DOB
+                }}</ion-label>
+                <ion-datetime></ion-datetime>
+              </ion-item>
+            </ion-col>
+
+            <ion-row>
+              <ion-col size="12" class="gender-label">{{
+                lang.i18n.registration.gender
+              }}</ion-col>
+
+              <ion-row>
+                <div class="div-padding-checkbox">
+                  <ion-item
+                    ><ion-label class="font-size"
+                      >{{ lang.i18n.registration.male }}
+                    </ion-label>
+                    <input type="checkbox" class="checkbox-size" />
+                  </ion-item>
+                </div>
+
+                <div class="div-padding-checkbox">
+                  <ion-item
+                    ><ion-label class="font-size"
+                      >{{ lang.i18n.registration.female }}
+                    </ion-label>
+                    <input type="checkbox" class="checkbox-size" />
+                  </ion-item>
+                </div>
+              </ion-row>
+            </ion-row>
           </ion-row>
         </ion-col>
       </ion-row>
