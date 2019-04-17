@@ -1,11 +1,47 @@
 // http://ionicframework.com/docs/theming/
-@import '~@ionic/angular/css/core.css';
-@import '~@ionic/angular/css/normalize.css';
-@import '~@ionic/angular/css/structure.css';
-@import '~@ionic/angular/css/typography.css';
-@import '~@ionic/angular/css/display.css';
-@import '~@ionic/angular/css/padding.css';
-@import '~@ionic/angular/css/float-elements.css';
-@import '~@ionic/angular/css/text-alignment.css';
-@import '~@ionic/angular/css/text-transformation.css';
-@import '~@ionic/angular/css/flex-utils.css';
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+body {
+  .w-50 {
+    width: 50%;
+  }
+  .w-75 {
+    width: 75%;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  ion-input {
+    margin-left: 15px;
+    --ion-placeholder-color: #707070;
+    --ion-placeholder-opacity: 1;
+    --ion-font-size: 20px;
+  }
+  ion-textarea {
+    margin-left: 15px;
+    --ion-placeholder-color: #707070;
+    --ion-placeholder-opacity: 1;
+    --ion-font-size: 20px;
+  }
+  .content-color-background {
+    --ion-background-color: #acd1da;
+  }
+}
+
+.ion-color-black-blue {
+  --ion-color-base: var(--ion-color-black-blue) !important;
+  --ion-color-base-rgb: var(--ion-color-black-blue-rgb) !important;
+  --ion-color-contrast: var(--ion-color-black-blue-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-black-blue-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-black-blue-shade) !important;
+  --ion-color-tint: var(--ion-color-black-blue-tint) !important;
+}

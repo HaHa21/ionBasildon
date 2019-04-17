@@ -1,0 +1,50 @@
+.background-color {
+  background-color: #808080;
+}
+
+ion-grid {
+  width: 90%;
+}
+
+ion-content {
+  .display {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    margin-top: 15px;
+    opacity: 0.5;
+    display: inline-block;
+  }
+
+  .background-input {
+    border-radius: 40px;
+    margin-top: 16px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    margin-top: 50px;
+  }
+}
+
+.color-btn {
+  background-color: #003057;
+}
+
+.selected-locale {
+  color: #003057;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  ion-content {
+    form {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<app-header></app-header>
+<ion-content class="content-color-background">
+  <form [formGroup]="loginForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col padding class="display" align-self-center>
+          <div padding ion-margin-vertical class="background-input">
+            <ion-input
+              type="text"
+              placeholder="Username"
+              formControlName="userName"
+            ></ion-input>
+          </div>
+          <div padding ion-margin-vertical class="background-input">
+            <ion-input
+              type="password"
+              placeholder="Password"
+              formControlName="passWord"
+            ></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-button type="submit" expand="block" color="black-blue">{{
+        lang.i18n.login.Login
+      }}</ion-button>
+      <ion-button
+        type="submit"
+        expand="block"
+        color="black-blue"
+        (click)="goToRegister()"
+        >New User</ion-button
+      >
+
+      <ion-row class="ion-margin-vertical"
+        ><div text-center class="w-100">
+          <a routerLink="" text-center>T&Cs</a>
+        </div>
+      </ion-row>
+      <ion-row class="ion-margin-vertical"
+        ><div text-center class="w-100">
+          <a (click)="goToForgotPassword()" routerDirection="forward"
+            >Forgot Password??</a
+          >
+        </div></ion-row
+      >
+      <ion-row class="ion-margin-vertical " id="locale">
+        <ion-col>
+          <div class="ion-text-end">
+            <ion-text
+              [class.selected-locale]="lang.i18n.locale === 'en'"
+              (click)="lang.changeLocale('en')"
+            >
+              EN
+            </ion-text>
+            <ion-text
+              [class.selected-locale]="lang.i18n.locale === 'de'"
+              (click)="lang.changeLocale('de')"
+            >
+              DE
+            </ion-text>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
