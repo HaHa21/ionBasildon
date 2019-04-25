@@ -7,6 +7,8 @@ import { IonicModule } from "@ionic/angular";
 
 import { RegistrationPage } from "./registration.page";
 import { SharedModule } from "src/app/shared/shared.module";
+import { HttpClientModule } from "@angular/common/http";
+import { AuthService } from "src/app/shared/services/auth.service";
 
 const routes: Routes = [
   {
@@ -22,8 +24,10 @@ const routes: Routes = [
     ReactiveFormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
-  declarations: [RegistrationPage]
+  declarations: [RegistrationPage],
+  providers: [AuthService]
 })
 export class RegistrationPageModule {}

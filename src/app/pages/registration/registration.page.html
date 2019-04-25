@@ -1,7 +1,7 @@
 <app-header [options]="{ title: lang.i18n.registration.newUser }"> </app-header>
 
 <ion-content class="content-color-background">
-  <form [formGroup]="registerForm">
+  <form [formGroup]="registerForm" novalidate (ngSubmit)="register()">
     <ion-grid>
       <ion-row>
         <ion-col padding class="display" align-self-center>
@@ -9,28 +9,28 @@
             <ion-input
               type="text"
               placeholder="Username"
-              formControlName="userName"
+              formControlName="username"
             ></ion-input>
           </div>
           <div padding ion-margin-vertical class="background-input">
             <ion-input
               type="password"
               placeholder="Password"
-              formControlName="passWord"
+              formControlName="password"
             ></ion-input>
           </div>
           <div padding ion-margin-vertical class="background-input">
             <ion-input
               type="text"
               placeholder="First Name"
-              formControlName="firstName"
+              formControlName="firstname"
             ></ion-input>
           </div>
           <div padding ion-margin-vertical class="background-input">
             <ion-input
               type="text"
               placeholder="Last Name"
-              formControlName="lastName"
+              formControlName="lastname"
             ></ion-input>
           </div>
           <div padding ion-margin-vertical class="background-input-address">
@@ -53,7 +53,7 @@
             <ion-input
               type="text"
               placeholder="Postcode"
-              formControlName="postCode"
+              formControlName="postcode"
             ></ion-input>
           </div>
           <ion-row>
@@ -62,7 +62,7 @@
                 <ion-label position="floating">{{
                   lang.i18n.registration.DOB
                 }}</ion-label>
-                <ion-datetime></ion-datetime>
+                <ion-datetime formControlName="date"></ion-datetime>
               </ion-item>
             </ion-col>
 
@@ -73,20 +73,16 @@
 
               <ion-row>
                 <div class="div-padding-checkbox">
-                  <ion-item
-                    ><ion-label class="font-size"
-                      >{{ lang.i18n.registration.male }}
+                  <ion-item *ngFor="let gender of genders"
+                    ><ion-label class="font-size">
+                      <input
+                        type="radio"
+                        [value]="gender"
+                        formControlName="gender"
+                        class="checkbox-size"
+                        checked
+                      />{{ gender }}
                     </ion-label>
-                    <input type="checkbox" class="checkbox-size" />
-                  </ion-item>
-                </div>
-
-                <div class="div-padding-checkbox">
-                  <ion-item
-                    ><ion-label class="font-size"
-                      >{{ lang.i18n.registration.female }}
-                    </ion-label>
-                    <input type="checkbox" class="checkbox-size" />
                   </ion-item>
                 </div>
               </ion-row>
@@ -96,13 +92,9 @@
       </ion-row>
     </ion-grid>
     <ion-grid>
-      <ion-button
-        type="submit"
-        expand="block"
-        color="black-blue"
-        (click)="submit()"
-        >{{ lang.i18n.buttons.submit }}</ion-button
-      >
+      <ion-button type="submit" expand="block" color="black-blue">{{
+        lang.i18n.buttons.submit
+      }}</ion-button>
     </ion-grid>
   </form>
 </ion-content>
