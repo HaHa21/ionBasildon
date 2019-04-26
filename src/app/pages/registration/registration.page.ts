@@ -29,7 +29,7 @@ export class RegistrationPage implements OnInit {
       email: ["", Validators.required],
       postcode: ["", Validators.required],
       date: ["", Validators.required],
-      gender: ["Male", Validators.required]
+      gender: ["", Validators.required]
     });
   }
 
